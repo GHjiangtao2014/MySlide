@@ -41,18 +41,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-
-
-collections:
-  slides:
-    output: true
-    permalink: /:collection/:path
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "slides"
-    values:
-      layout: "slides"
