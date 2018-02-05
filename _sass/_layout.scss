@@ -1,81 +1,66 @@
-//
-// Generals styles for material design light elements
-//
-
-// Page container
-
-.page-content{
-  max-width: 1200px;
-  margin: 0 auto;
+/**
+ * Site header
+ */
+ .wrapper .container {
+    max-width: 80rem;
 }
 
-// Cards styles
-.mdl-card {
-  .mdl-card__title {
-    color: #fff;
-    height: 176px;
-    background: url('../img/welcome_card.jpg') center / cover;
-  }
-
-  .mdl-card__supporting-text > span { color: #9F9F9F; }
-
-  .mdl-card__menu {
-    color: #fff;
-  }
+.site-header {
+    text-align: center;
 }
 
-.post-button{
-  position: absolute;
-  right: 15px;
-  bottom: 25px;
+.navbar {
+    display: block;
 }
 
-// Index highlight card
+.nav-item {
+    display: inline-block;
+    padding: 1rem;
+}
 
-.section-highlight {
-  position: relative;
-  margin: 10px;
+.post-nav {
+    text-align: center;
+    padding: 1rem;
+}
 
-  .mdl-card__supporting-text {
-    margin: 40px;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    padding: 0;
-    color: inherit;
-    width: calc(100% - 80px);
-  }
+.post-title {
+    display: block;
+}
 
-  .mdl-card__actions {
-    border-top: 1px solid rgba(0, 0, 0, 0.12);
-    margin: 0;
-    padding: 4px 40px;
-    color: inherit;
-  }
+/**
+ * override column size for mobile
+ */
+@media (max-width: 40.0rem) {
+    .row .column.column-33, .row .column.column-34 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 
-  header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    min-height: 200px;
-    background: url('../img/welcome_card.jpg') center / cover;
-  }
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
 
-  button {
-    position: absolute;
-    z-index: 99;
-    top: 8px;
-    right: 8px;
-  }
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
 
+/**
+ * Misc
+ */
+.preview-panel {
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid $color-initial;
+    
+    &:hover {
+        border: 1px solid $grey-color-light;
+    }
 }
