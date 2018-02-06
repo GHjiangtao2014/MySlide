@@ -415,6 +415,10 @@ Reveal.addEventListener( 'customevent', function() {
 					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
 					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
 				},
+				chalkboard: {
+					// optionally load pre-recorded chalkboard drawing from file
+					src: "chalkboard.json",
+				},
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
@@ -426,8 +430,16 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
 					// MathJax
-					{ src: 'plugin/math/math.js', async: true }
-				]
+					{ src: 'plugin/math/math.js', async: true },
+					{ src: 'plugin/chalkboard/chalkboard.js' },
+				],
+				keyboard: {
+	    		67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
+	    		66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+	    		46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+	     		8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
+	    		68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
+				},
 			});
 
 		</script>
