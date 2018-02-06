@@ -104,9 +104,9 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 //					{ src: 'reveal.js-plugins/audio-slideshow/slideshow-recorder.js'},
-					{ src: 'plugin/audio-slideshow/audio-slideshow.js'},
-					{ src: 'plugin/chalkboard/chalkboard.js'},
-					{ src: 'plugin/menu/menu.js'},
+					{ src: 'plugin/audio-slideshow/audio-slideshow.js', async: true},
+					{ src: 'plugin/chalkboard/chalkboard.js', async: true},
+					{ src: 'plugin/menu/menu.js', async: true},
 				],
 				audio: {
 					prefix: 'chalkboard/',
