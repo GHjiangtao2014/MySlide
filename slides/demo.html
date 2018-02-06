@@ -19,8 +19,6 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<!-- chalkboard buttons -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -31,7 +29,6 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
-<script async defer src="https://buttons.github.io/buttons.js"></script>
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -418,12 +415,6 @@ Reveal.addEventListener( 'customevent', function() {
 					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
 					config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
 				},
-				chalkboard: {
-					// optionally load pre-recorded chalkboard drawing from file
-					src: "plugin/chalkboard/chalkboard.json",
-					toggleChalkboardButton: { left: "80px" },
-					toggleNotesButton: { left: "130px" },
-				},
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
@@ -436,15 +427,8 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/notes/notes.js', async: true },
 					// MathJax
 					{ src: 'plugin/math/math.js', async: true },
-					{ src: 'plugin/chalkboard/chalkboard.js', async: true  }
 				],
-				keyboard: {
-	    		67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
-	    		66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
-	    		46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
-	     		8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
-	    		68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
-				},
+
 			});
 
 		</script>
