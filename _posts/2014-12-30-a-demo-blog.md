@@ -7,7 +7,7 @@ title: Hello Github Pages
 published: true
 ---
 
-*Abstract:* Hello Github Pages! This is the genesis-page of my work pages.
+*Abstract:* Hello Github Pages! This is the genesis-page of my work pages. I will put some introduction of Github pages and some thing about HTML, CSS, Markdown. Hope that it will help my future works.
 
 <!--more-->
 ## 主要内容
