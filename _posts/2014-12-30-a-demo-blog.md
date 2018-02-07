@@ -4,6 +4,7 @@ tags: HTML CSS jekyll Markdown
 date: 2018-01-01 13:06
 thumbnail: http://placehold.it/100x100
 title: Hello Github Pages
+subtitle: Subtitle
 published: true
 ---
 
