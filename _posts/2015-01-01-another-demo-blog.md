@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: machine-learning python numpy scikit-learn
-date: 2015-01-01 13:08
+date: 2018-02-01 13:08
 thumbnail: http://placehold.it/100x100
 title: Another Demo blog
 published: true
